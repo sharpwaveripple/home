@@ -1,0 +1,6 @@
+# using skeleton, specify mirror and package
+conda skeleton cran party
+conda build r-party
+
+# go to installed dir (~/anaconda/conda-bld/linux_x64)
+conda install --use-local r-party
